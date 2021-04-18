@@ -1,1 +1,21 @@
-<p>post-user works!</p>
+<p-panel styleClass="dark-panel" header="New user :">
+  <div class="p-fluid p-grid">
+    <div class="p-field p-md-4 margin-top-15">
+      <span class="p-float-label p-input-icon-left">
+        <i class="pi pi-google"></i>
+        <input type="text" id="inputtext-left" pInputText [(ngModel)]="mail">
+        <label for="inputtext-left">Mail</label>
+      </span>
+    </div>
+    <div class="p-field p-md-4 margin-top-15">
+      <span class="p-float-label p-input-icon-left">
+        <i class="pi pi-user"></i>
+        <input type="text" id="inputtext" pInputText [(ngModel)]="name">
+        <label for="inputtext">Name</label>
+      </span>
+    </div>
+    <div class="p-field p-md-1 margin-top-15">
+      <p-button label="Create" (onClick)="postUser()"></p-button>
+    </div>
+  </div>
+</p-panel>

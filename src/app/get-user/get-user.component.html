@@ -1,3 +1,17 @@
+<p-panel styleClass="dark-panel" header="Get user :">
+  <div class="p-fluid p-grid">
+    <div class="p-field p-md-4 margin-top-15">
+        <span class="p-float-label">
+          <p-dropdown [options]="users" [(ngModel)]="selectedUser" optionLabel="mail" [autoDisplayFirst]="false" inputId="dropdownMail"></p-dropdown>
+          <label for="dropdownMail">User's mail</label>
+        </span>
+    </div>
+    <div class="p-field p-md-1 margin-top-15">
+      <p-button class="button-search" label="Search" (onClick)="getUserInfos()"></p-button>
+    </div>
+  </div>
+</p-panel>
 <br>
-Select user :
-<p-dropdown [options]="users" [(ngModel)]="selectedUtilisateur" optionLabel="mail"></p-dropdown>
+<div *ngIf="userInfos">
+  <app-user-infos [infos]="userInfos" ></app-user-infos>
+</div>

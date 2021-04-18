@@ -1,9 +1,20 @@
 export interface UserServiceRes {
-  equipe?: string;
+  equipe: null | string;
   mail: string;
   nom: null | string;
   listeFiches: Fiche[];
   listeKanbansBoard: KanbansBoard[];
+}
+
+export interface User {
+  mail: string;
+  nom: null | string;
+  listeFiches: Fiche[];
+  listeKanbansBoard: KanbansBoard[];
+}
+
+export class User {
+  constructor(public equipe: string | null, mail: string, nom: null | string, listeFiches: Fiche[], listeKanbansBoard: KanbansBoard[]){}
 }
 
 export interface KanbansBoard {

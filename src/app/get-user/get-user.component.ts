@@ -1,5 +1,5 @@
+import { UserServiceRes } from './../user';
 import { Component, OnInit } from '@angular/core';
-import { UserServiceRes } from '../user';
 import { KanbanAPIService } from './../kanban-api.service';
 
 @Component({
@@ -8,8 +8,9 @@ import { KanbanAPIService } from './../kanban-api.service';
   styleUrls: ['./get-user.component.css']
 })
 export class GetUserComponent implements OnInit {
-  selectedUtilisateur!: UserServiceRes;
+  selectedUser!: UserServiceRes;
   users: UserServiceRes[] = [];
+  userInfos!: UserServiceRes;
 
   constructor(private kanbanAPIService: KanbanAPIService) { }
 
@@ -21,4 +22,14 @@ export class GetUserComponent implements OnInit {
     });
   }
 
+  // tslint:disable-next-line: typedef
+  getUserInfos() {
+    if (this.selectedUser !== undefined){
+      // tslint:disable-next-line: deprecation
+      this.kanbanAPIService.getUserInfos(this.selectedUser.mail).subscribe((userInfos) => {
+      console.log(userInfos);
+      this.userInfos = userInfos;
+    });
+    }
+  }
 }

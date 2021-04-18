@@ -1,0 +1,27 @@
+<p-panel styleClass="dark-panel" header="Update user :">
+  <div *ngIf="!infos.equipe; then thenTemplate; else elseTemplate" class="p-fluid p-grid"></div>
+  <ng-template #thenTemplate>
+    <div class="p-fluid p-grid">
+      <div class="p-field p-md-4 margin-top-15">
+        <span class="p-float-label p-input-icon-left">
+          <i class="pi pi-google"></i>
+          <input type="text" id="inputtext-left" pInputText disabled [(ngModel)]="infos.mail">
+          <label for="inputtext-left">Mail</label>
+        </span>
+      </div>
+      <div class="p-field p-md-4 margin-top-15">
+        <span class="p-float-label p-input-icon-left">
+          <i class="pi pi-user"></i>
+          <input type="text" id="inputtext" pInputText [(ngModel)]="infos.nom">
+          <label for="inputtext">Name</label>
+        </span>
+      </div>
+      <div class="p-field p-md-1 margin-top-15">
+        <p-button label="Update" (onClick)="updateUser()"></p-button>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #elseTemplate>
+    You can't update admin user, try with another user
+  </ng-template>
+</p-panel>
