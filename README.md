@@ -6,12 +6,12 @@ You must run the TP5 (https://github.com/Jlebours/JaxRSOpenAPIby) following the 
 Without launching the rest server, our application will not be able to run correctly because it will not have a backend and then data to use.
 
 ## Next step 
-## Clone git repository
+### Clone git repository
 https://github.com/Jlebours/kanbAng
 ## How to install
 Check the installation of nodejs using nvm (see guid install) http://olivier.barais.fr/blog/posts/teaching/istic/m2/french/2018/09/10/Operation_portable_M2_ISTIC.html
 
-## How to run
+### How to run
 Run `npm start` for a dev server to run with the proxy. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## About
