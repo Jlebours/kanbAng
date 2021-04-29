@@ -8,7 +8,7 @@ Without launching the rest server, our application will not be able to run corre
 ## Next step 
 ### Clone git repository
 https://github.com/Jlebours/kanbAng
-## How to install
+### How to install
 Check the installation of nodejs using nvm (see guid install) http://olivier.barais.fr/blog/posts/teaching/istic/m2/french/2018/09/10/Operation_portable_M2_ISTIC.html
 
 ### How to run
