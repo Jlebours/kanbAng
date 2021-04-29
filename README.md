@@ -19,7 +19,7 @@ Vous arrivez tout d'abord sur une page principale, les routes ont été mises en
 
 Les fonctionnalités fournies par cette applications sont en lien avec mon TP5, cad vous allez avoir la possibilité de modifier les utilisateurs :
 - l'onglet Get User va vous permettre de pouvoir récupérer les informations de tous les utilisateurs qui ont été créés en base au préalable et même ceux que vous allez créer par la suite. 
-Une fois sélectionné, si celui-ci est une utilisateur vous allez avoir la chance de pourvoir modifier son nom; ce qui ne sera pas le cas pour un admin, l'accès sera bloqué. 
+Une fois sélectionné, si celui-ci est un utilisateur vous allez avoir la chance de pourvoir modifier son nom; ce qui ne sera pas le cas pour un admin, l'accès sera bloqué. 
 - l'onglet New User va vous permettre de créer un nouvel utilisateur (non admin) de la manière la plus simple possible. Il n'y a pas de notification lors de la création, désolé :(.
 - l'onglet Remove User vous fourni la liste de tous les utilisateurs, vous pourrez ainsi cliquer sur le bouton remove pour les enlever définitivement de la base. 
 
